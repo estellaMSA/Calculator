@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textoinforme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Por favor, informe o primeiro valor:"/>
+
+       <EditText
+           android:id="@+id/valor1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="20dp"
+           android:inputType="number"
+           android:layout_below="@+id/textoinforme"/>
+
+        <TextView
+            android:id="@+id/operacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/valor1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Informe o segundo valor:"/>
+
+        <EditText
+            android:id="@+id/valor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:layout_below="@+id/operacao"/>
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/valor2"/>
+
+        <TextView
+            android:id="@+id/txtresu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calcular"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:text="Resultados:"/>
+
+        <TextView
+            android:id="@+id/resultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/txtresu"/>
+
+        <TextView
+            android:id="@+id/historico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resultados"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Histórico"/>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/historico"></ListView>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
